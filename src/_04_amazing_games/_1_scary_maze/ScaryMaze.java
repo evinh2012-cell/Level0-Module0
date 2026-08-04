@@ -102,7 +102,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		//Scare your player with scary messages, sounds and pictures
 		
 		System.out.println("BOO!");
-		playScarySound("Rahhh.mp3");
+		playScarySound("standardScarySound.wav");
 		if (canPlaySounds) {
 
 			/**********  PLAY A SOUND ***************/
@@ -134,7 +134,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 				Thread.sleep(clip.getMicrosecondLength()/1000);
 			}
 			catch (Exception e) {
-				System.out.println("Could not play this sound");
+				System.out.println("standardScarySound.wav");
 			}
  		}
 		else {
